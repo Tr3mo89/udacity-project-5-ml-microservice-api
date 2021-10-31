@@ -1,5 +1,7 @@
-[![Tr3mo89](https://circleci.com/gh/Tr3mo89/udacity-project-5-ml-microservice-api>.svg?style=svg)](<https://app.circleci.com/pipelines/github/Tr3mo89/udacity-project-5-ml-microservice-api>)
+[![Tr3mo89](https://circleci.com/gh/Tr3mo89/udacity-project-5-ml-microservice-api>.svg?style=svg&circle-token=b1c039fb5762076e7d50429ddd7d2cea060542a6)](<https://app.circleci.com/pipelines/github/Tr3mo89/udacity-project-5-ml-microservice-api>)
 
+
+b1c039fb5762076e7d50429ddd7d2cea060542a6
 
 ## Project Overview
 
