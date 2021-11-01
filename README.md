@@ -34,9 +34,45 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
+### Running test
+
+* Test the Dockerfile: `hadolint Dockerfile `
+* Lint test: `make lint`
+
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+---
+
+## File Overview
+
+### Dockerfile
+* Specific python Image
+* Workdir is /app
+* Update pip and install requirements
+* Expose port 80
+* Run `app.py` with python
+
+### Requirements
+* contains the requirements for the Dockerfile / Image
+
+### Run Docker
+1. Builds the docker image based on the dockerfile and tags it
+2. List all docker images
+3. Run the flask app in a docker container
+
+### Upload Docker
+1. Sets the dockerpath
+2. Login to docker hub and tag the docker image
+3. Push the image to the docker hub repository
+
+
+### Run Kubernetes
+1. Set the dockerpath to fetch the image
+2. run the flask app on kubernetes based on the fetched image and set the port
+3. List all running pods
+4. Start the port forwarding for the flask app
