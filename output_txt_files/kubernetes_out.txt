@@ -1,3 +1,17 @@
+felix-storm:~/environment/udacity-project-5-ml-microservice-api (master) $ ./run_kubernetes.sh 
+pod/flask created
+NAME    READY   STATUS    RESTARTS   AGE
+flask   0/1     Pending   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+felix-storm:~/environment/udacity-project-5-ml-microservice-api (master) $ ./run_kubernetes.sh 
+Error from server (AlreadyExists): pods "flask" already exists
+NAME    READY   STATUS    RESTARTS   AGE
+flask   1/1     Running   0          56s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
 [2021-10-31 22:17:44,827] INFO in app: JSON payload: 
 {'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
 [2021-10-31 22:17:44,843] INFO in app: Inference payload DataFrame: 
